@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.org/silverstripe/fontpicker.svg?branch=master)](https://travis-ci.org/silverstripe/fontpicker)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/silverstripe/fontpicker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/silverstripe/fontpicker/?branch=master)
 [![codecov](https://codecov.io/gh/silverstripe/fontpicker/branch/master/graph/badge.svg)](https://codecov.io/gh/silverstripe/fontpicker)
-[![SilverStripe supported module](https://img.shields.io/badge/silverstripe-supported-0071C4.svg)](https://www.silverstripe.org/software/addons/silverstripe-commercially-supported-module-list/)
 
 This module adds a font picker field which can be used anywhere.
 
