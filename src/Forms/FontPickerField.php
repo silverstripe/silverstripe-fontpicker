@@ -3,6 +3,7 @@
 namespace SilverStripe\Fontpicker\Forms;
 
 use SilverStripe\Forms\SingleSelectField;
+use SilverStripe\View\Requirements;
 
 class FontPickerField extends SingleSelectField
 {
@@ -14,9 +15,9 @@ class FontPickerField extends SingleSelectField
      */
     protected static $default_font = 'nunito-sans';
 
-    public static function getDefaultFont()
+    public function getDefaultFont()
     {
-        return static::$default_font;
+        return $this->owner->config()->get('default_font');
     }
 
     public function __construct($name, $title = null, $source = array(), $value = null)
@@ -24,6 +25,9 @@ class FontPickerField extends SingleSelectField
         parent::__construct($name, $title, $source, $value);
 
         $this->addExtraClass('font-picker-field');
+
+        Requirements::javascript("silverstripe/fontpicker:client/dist/js/bundle.js");
+        Requirements::css("silverstripe/fontpicker:client/dist/styles/bundle.css");
     }
 
     public function getSchemaDataDefaults()
@@ -47,6 +51,6 @@ class FontPickerField extends SingleSelectField
 
     public function Value()
     {
-        return parent::Value() ?: self::getDefaultFont();
+        return parent::Value() ?: $this->getDefaultFont();
     }
 }

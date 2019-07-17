@@ -1,6 +1,6 @@
 {
-  "name": "fontpicker",
-  "version": "1.0.0",
+  "name": "@silverstripe/fontpicker",
+  "version": "0.0.1",
   "description": "Base module for the fontpicker module",
   "scripts": {
     "build": "yarn && yarn lint && NODE_ENV=production webpack -p --bail --progress",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/silverstripe/fontpicker.git"
+    "url": "git+https://github.com/silverstripe/silverstripe-fontpicker.git"
   },
   "author": "SilverStripe",
   "license": "BSD-3-Clause",
