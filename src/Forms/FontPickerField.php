@@ -25,9 +25,6 @@ class FontPickerField extends SingleSelectField
         parent::__construct($name, $title, $source, $value);
 
         $this->addExtraClass('font-picker-field');
-
-        Requirements::javascript("silverstripe/fontpicker:client/dist/js/bundle.js");
-        Requirements::css("silverstripe/fontpicker:client/dist/styles/bundle.css");
     }
 
     public function getSchemaDataDefaults()

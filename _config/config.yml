@@ -1,0 +1,8 @@
+---
+Name: fontpickerconfig
+---
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_css:
+    - "silverstripe/fontpicker:client/dist/styles/bundle.css"
+  extra_requirements_javascript:
+    - "silverstripe/fontpicker:client/dist/js/bundle.js"
